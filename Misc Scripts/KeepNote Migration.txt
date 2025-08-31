@@ -1,0 +1,26 @@
+# To migrate my big KeepNote note library into Obsidian, which is a much more modern and visual note-taking app. 
+# KeepNote archives its notes as HTML files, which I'm going to need to migrate into XML files. This Python script is to help me achieve this. 
+# Best case scenario would be to maintain the folder heirarchy present in KeepNote, translating them into node connections in Obsidian.
+
+# PowerShell
+
+# Things to install:
+### winget install Python.Python.3.12
+### pip install pypandoc
+### winget install JohnMacFarlane.Pandoc
+### py -m pip install --user html2text
+
+
+
+# Dry run (no files written yet)
+python .\keepnote_to_obsidian_v2.py `
+  -s "C:\Users\Admin\OneDrive\KeepNote\Security" `
+  -o "C:\Users\Admin\OneDrive\Documents\Obsidian Folder\Security" `
+  --make-index `
+  --dry-run
+
+# Real run
+python .\keepnote_to_obsidian_v2.py `
+  -s "C:\Users\Admin\OneDrive\KeepNote\Security" `
+  -o "C:\Users\Admin\OneDrive\Documents\Obsidian Folder\Security" `
+  --make-index
