@@ -1,2 +1,2 @@
-# self_study
+# Self-Study
 Personal GitHub repository of scripts, files, reports, and other things for use as a public professional portfolio. 
